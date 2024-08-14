@@ -2,4 +2,4 @@
 
 cd /home/ubuntu/prueba-aws-ms-seguridad
 
-npm install
+sudo npm install

@@ -1,21 +1,5 @@
-version: 0.2
-
-phases:
-  install:
-    runtime-versions:
-      nodejs: 14  # Cambia la versión si es necesario
-    commands:
-      - echo Installing dependencies...
-
-  build:
-    commands:
-      - echo Build started on `date`
-
-artifacts:
-  files:
-    - '**/*'  # Esto subirá todos los archivos generados al bucket S3
-  base-directory: /home/ubuntu/prueba-aws-ms-seguridad  # Directorio base donde se encuentran los archivos
-
+version: 0.0
+os: linux
 files:
   - source: /
     destination: /home/ubuntu/prueba-aws-ms-seguridad

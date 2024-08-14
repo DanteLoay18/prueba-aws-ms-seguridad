@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo pm2 kill
 
 cd /home/ubuntu/prueba-aws-ms-seguridad
 

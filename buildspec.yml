@@ -14,6 +14,14 @@ phases:
       - echo "Building the application"
       - echo "Creating .env file"
       - echo JWT_PRIVATE_KEY=${JWT_PRIVATE_KEY} >> .env
+      - echo DATABASE_NAME=${DATABASE_NAME} >> .env
+      - echo DATABASE_USER=${DATABASE_USER} >> .env
+      - echo DATABASE_PASSWORD=${DATABASE_PASSWORD} >> .env
+      - echo DATABASE_PORT=${DATABASE_PORT} >> .env
+      - echo DATABASE_HOST=${DATABASE_HOST} >> .env
+      - echo DATABASE_DIALECT=${DATABASE_DIALECT} >> .env
+      - echo SECRETORPRIVATEKEY=${SECRETORPRIVATEKEY} >> .env
+      - echo SECRETKEYCRIPTO=${SECRETKEYCRIPTO} >> .env
 
   post_build:
     commands:

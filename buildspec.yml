@@ -13,7 +13,7 @@ phases:
     commands:
       - echo "Building the application"
       - echo "Creating .env file"
-      - echo "JWT_PRIVATE_KEY=$JWT_PRIVATE_KEY" > /.env
+      - echo "JWT_PRIVATE_KEY=$JWT_PRIVATE_KEY" > .env
 
   post_build:
     commands:

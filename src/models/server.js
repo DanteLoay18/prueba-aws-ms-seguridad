@@ -15,6 +15,8 @@ class Server{
             usuario:'/api/usuario',
         }
 
+        console.log(process.env.DATABASE_NAME);
+        
         this.contectarDbSequelize();
 
          //Middlewares

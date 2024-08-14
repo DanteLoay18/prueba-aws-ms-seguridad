@@ -53,6 +53,9 @@ class Server{
         this.app.get('/health3', (req, res)=>{
             res.sendStatus(200);
         })
+        this.app.get('/health4', (req, res)=>{
+            res.sendStatus(200);
+        })
     }
 
     listen(){

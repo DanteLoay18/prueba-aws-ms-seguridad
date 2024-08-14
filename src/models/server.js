@@ -46,8 +46,11 @@ class Server{
         this.app.get('/health', (req, res)=>{
             res.sendStatus(200);
         })
-        
+
         this.app.get('/health2', (req, res)=>{
+            res.sendStatus(200);
+        })
+        this.app.get('/health3', (req, res)=>{
             res.sendStatus(200);
         })
     }
